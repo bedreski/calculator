@@ -4,7 +4,7 @@ class CalculateByOperator
 
   attr_accessor :number1, :number2, :operand
 
-  def initialize(number1, b, operand)
+  def initialize(number1, number2, operand)
     @number1 = number1
     @number2 = number2 
     @operand = operand 
@@ -13,7 +13,7 @@ class CalculateByOperator
 
   def calculate
     
-    case @operand
+    case operand
       when '+'
         @calculator.add
         
