@@ -1,23 +1,28 @@
 class Calculator 
 
-  attr_accessor :a, :b
+  attr_accessor :number1, :number2
 
-  def multiply(a, b)
-    a * b
+  def initialize(number1, number2)
+    @number1 = number1
+    @number2 = number2
   end 
 
-  def divide(a, b)
+  def multiply
+    number1 * number2
+  end 
 
-    a / b unless b.eql?(0) 
+  def divide
+
+    number1 / number2 unless number2.eql?(0) 
     
   end 
 
-  def add(a, b)
-    a + b
+  def add
+    number1 + number2
   end 
 
-  def subtract(a, b)
-    a - b
+  def subtract
+    number1 - number2
   end 
 
 end 
