@@ -9,9 +9,9 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    @calculate = CalculateByOperator.new params[:number1, :number2, :operations]
-    @result = @calculate.calculate 
+    @calculate = CalculateByOperator.new(params[:number1], params[:number2], params[:operations])
+    @result = @calculate.calculate
     erb :index
-    # redirect '/'
   end
+
 end
