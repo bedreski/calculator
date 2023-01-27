@@ -3,7 +3,6 @@ require_relative '../spec_helper.rb'
 describe Calculator do 
 
   let(:calculator) { Calculator.new(2, 3) }
-  let(:divide) { Calculator.new(2, 0) }
 
   it "return the correct multiply operation result" do
     expect(calculator.multiply).to eq(6)
@@ -18,7 +17,7 @@ describe Calculator do
   end 
 
   it "return float result for division operation" do 
-    expect(calculator.divide).to eq(0.7)
+    expect(calculator.divide).to eq(0.6666666666666666)
   end 
 
 end 
