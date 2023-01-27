@@ -1,29 +1,30 @@
-class CalculateByOperator
+require_relative 'calculator.rb'
 
-  calculator = Calculator.new 
+class CalculateByOperator 
 
-  attr_accessor :a, :b, :operand
+  attr_accessor :number1, :number2, :operand
 
-  def initialize(a, b, operand)
-    @a = a
-    @b = b 
+  def initialize(number1, b, operand)
+    @number1 = number1
+    @number2 = number2 
     @operand = operand 
+    @calculator = Calculator.new(@number1, @number2)
   end 
 
   def calculate
     
     case @operand
       when '+'
-        calculator.add(@a, @b)
+        @calculator.add
         
       when '-'
-        calculator.subtract(@a, @b)
+        @calculator.subtract
       
       when '*'
-        calculator.multiply(@a, @b)
+        @calculator.multiply
       
       when '/'
-        calculator.divide(@a, @b)
+        @calculator.divide
     end  
   end 
 
