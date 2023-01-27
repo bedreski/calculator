@@ -1,25 +1,28 @@
 class Calculator 
 
-  attr_accessor :a, :b
-  
-  def multiply(a, b)
-    a * b
+  attr_accessor :number1, :number2
+
+  def initialize(number1, number2)
+    @number1 = number1
+    @number2 = number2
   end 
 
-  def divide(a, b)
+  def multiply
+    number1 * number2
+  end 
 
-    a / b unless b.zero? #'has zero value?'
+  def divide
 
-    puts 'Calculator error: division by zero'
+    number1.to_f / number2.to_f unless number2.eql?(0) 
     
   end 
 
-  def add(a, b)
-    a + b
+  def add
+    number1 + number2
   end 
 
-  def subtract(a, b)
-    a - b
+  def subtract
+    number1 - number2
   end 
 
 end 

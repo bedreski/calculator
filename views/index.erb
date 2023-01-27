@@ -1,0 +1,21 @@
+<h3>Calculator</h3>
+<form action="/" method="post">
+ <label for="number1">Number 1</label>
+ <input type="text" id="number1" name="number1">
+
+ <label for="number2">Number 2</label>
+ <input type="text" id="number2" name="number2">
+
+<label for="operation-select">Operation:</label>
+
+<select name="operations" id="operation-select">
+    <option value="">Operation</option>
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">x</option>
+    <option value="/">/</option>
+</select>
+
+ <input type="submit" value="Get result">
+ <h4>Result: <%=@result%></h4>
+</form>

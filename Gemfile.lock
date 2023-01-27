@@ -36,15 +36,18 @@ GEM
       rack-protection (= 3.0.5)
       tilt (~> 2.0)
     tilt (2.0.11)
+    webrick (1.7.0)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  rack (~> 2.2)
   rack-test (~> 2.0)
   rspec (~> 3.12)
   simplecov (~> 0.22.0)
   sinatra (~> 3.0)
+  webrick (~> 1.7)
 
 BUNDLED WITH
    2.4.3
