@@ -13,7 +13,9 @@ class Calculator
 
   def divide
 
-    number1 / number2 unless number2.eql?(0) 
+    result = number1.to_f / number2.to_f unless number2.eql?(0) 
+    result.to_f
+    result.round(1)
     
   end 
 
